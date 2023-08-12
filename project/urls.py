@@ -21,4 +21,5 @@ from product import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('product/<int:id>', views.product_detail),
+    path('product/order-completed', views.order_completed, name='order-completed'),
 ]
